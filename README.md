@@ -1,10 +1,10 @@
 # practice_memories_project
 ## Introduction
 This is a practice project based on a Youtube tutorial on MERN stack.
-M - MongoDB
-E - Express
-R - React
-N - Node.js
+- M - MongoDB
+- E - Express
+- R - React
+- N - Node.js
 
 The application is like a social media website where people can add memories with pictures.
 People can also search for memories based on search query and tags.
