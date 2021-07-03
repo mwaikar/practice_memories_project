@@ -76,3 +76,14 @@ export const likePost = (id) => async (dispatch) => {
         console.log('Error while liking post', error);
     }
 }
+
+export const commentPost = (value, id) => async (dispatch) => {
+    try {
+        const { data } = await api.comment(value, id);
+        
+        dispatch({type: actions.COMMENT, payload: data});
+        return data.comments;
+    } catch (error) {
+        console.log('Error while updating comment', error);
+    }
+}

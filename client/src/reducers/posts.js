@@ -29,6 +29,16 @@ const reducer = (state = {isLoading: true, posts: []}, action) => {
             return {...state, posts: state.posts.map(post => post._id === action.payload._id ? action.payload : post)};
         case actions.DELETE:
             return {...state, posts: state.posts.filter(post => post._id !== action.payload)};
+        case actions.COMMENT:
+            return {...state,
+                posts: state.posts.map(post => {
+                    // return only the post which got the comments updated
+                    // else return post normally
+                    if (post._id === action.payload._id) {
+                        return action.payload;
+                    }
+                    return post;
+                })}
         default:
             return state;
     }

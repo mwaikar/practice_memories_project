@@ -4,7 +4,8 @@ export const actions = {
     DELETE: 'DELETE',
     FETCH_ALL: 'FETCH_ALL',
     FETCH_BY_SEARCH: 'FETCH_BY_SEARCH',
-    FETCH_POST: 'FETCH_POST'
+    FETCH_POST: 'FETCH_POST',
+    COMMENT: 'COMMENT'
 }
 
 export const authActions = {
