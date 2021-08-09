@@ -55,7 +55,7 @@ const Post = ({ post, setCurrentId }) => {
                                 onClick={() => setCurrentId(post._id)}
                                 alt="Edit Memory"
                             >
-                                <MoreHorizIcon fontSize="default" />
+                                <MoreHorizIcon fontSize="medium" />
                             </Button>
                         </div>
                     )
