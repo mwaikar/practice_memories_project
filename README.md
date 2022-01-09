@@ -20,4 +20,4 @@ PORT mentioned in server > index.js file can be of your choice. Default is 5000.
 PORT and CONNECTION_URL are both maintained locally in .env file. A dependency called dotnv is already mentioned in server > package.json.
 
 ## Deployed version of the application:
-https://create-memories-application.netlify.app/posts
+https://create-memories-application.netlify.app
